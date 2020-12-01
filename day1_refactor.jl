@@ -12,7 +12,7 @@ to think about it some more. (Recursion is a state of mind, it seems.)
 """
     part_1(data, target)
 
-Recursive search for the number making up to 2020.
+Search for the number making up to 2020.
 """
 function part_1(data::Array, target::Integer=2020)::Integer
     for d in data
