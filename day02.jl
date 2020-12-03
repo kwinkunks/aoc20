@@ -19,10 +19,10 @@ function count_chars(data)::Int
     return total
 end
 
-data = readdlm("./day02_test.txt")
-@test count_chars(data) == 2
+test = readdlm("./data/day02_test.txt")
+@test count_chars(test) == 2
 
-data = readdlm("./day02.txt")
+data = readdlm("./data/day02.txt")
 println("Part 1 count: $(count_chars(data))")
 
 
@@ -43,8 +43,6 @@ function count_chars_again(data)::Int
     return total
 end
 
-data = readdlm("./day02_test.txt")
-@test count_chars_again(data) == 1
+@test count_chars_again(test) == 1
 
-data = readdlm("./day02.txt")
 println("Part 2 count: $(count_chars_again(data))")

@@ -22,10 +22,10 @@ function count_trees(data, move=(1, 3))::Int
     return total
     end
 
-test = readdlm("./day03_test.txt")
+test = readdlm("./data/day03_test.txt")
 @test count_trees(test) == 7
 
-data = readdlm("./day03.txt")
+data = readdlm("./data/day03.txt")
 println("Part 1 trees: $(count_trees(data))")
 
 

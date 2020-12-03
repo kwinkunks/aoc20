@@ -22,10 +22,10 @@ function part_1(data::Array, target::Integer=2020)::Integer
     end
 end
 
-test1 = readdlm("./day01_test.txt")
-@test part_1(test1) == 514579
+test = readdlm("./data/day01_test.txt")
+@test part_1(test) == 514579
 
-data = readdlm("./day01.txt")
+data = readdlm("./data/day01.txt")
 println("Part 1: $(part_1(data))")
 
 
@@ -44,7 +44,6 @@ function part_2(data::Array, target::Integer=2020)::Integer
     end
 end
 
-test2 = readdlm("./day01_test.txt")
-@test part_2(test2) == 241861950
+@test part_2(test) == 241861950
 
 println("Part 2: $(part_2(data))")
