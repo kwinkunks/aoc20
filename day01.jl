@@ -1,6 +1,6 @@
 using DelimitedFiles
 
-data = readdlm("./day1.txt")
+data = readdlm("./day01.txt")
 
 # Part 1.
 for d in data
