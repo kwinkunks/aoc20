@@ -4,7 +4,7 @@ Day 4
 """
 
 
-def get_data(fname) -> dict:
+def get_data(fname: str) -> dict:
     """
     Read the data file into dicts.
     """
@@ -32,6 +32,7 @@ def part1(fname: str) -> int:
     reqs = ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
     opts = ["cid"]
     return sum(sum(req in rec for req in reqs)==len(reqs) for rec in data)
+
 
 def check_range(s: str, mi: int, ma: int, L: int=4) -> bool:
     if L is None:
@@ -95,8 +96,16 @@ def check_ecl(s: str) -> bool:
 def check_pid(s: str) -> bool:
     return len(s)==9 and s.isdigit()
 
+TESTS = {"byr": check_byr,
+         "iyr": check_iyr,
+         "eyr": check_eyr,
+         "hgt": check_hgt,
+         "hcl": check_hcl,
+         "ecl": check_ecl,
+         "pid": check_pid,
+        }
 
-def part2(fname: dict):
+def part2(fname: str) -> int:
     """Part 2.
 
     Tests
@@ -104,15 +113,7 @@ def part2(fname: dict):
     4
     """
     data = get_data(fname)
-    reqs = {"byr": check_byr,
-            "iyr": check_iyr,
-            "eyr": check_eyr,
-            "hgt": check_hgt,
-            "hcl": check_hcl,
-            "ecl": check_ecl,
-            "pid": check_pid,
-           }
-    return sum(sum(reqs[k](v) for k, v in d.items() if k != "cid")==7 for d in data)
+    return sum(sum(TESTS[k](v) for k, v in d.items() if k != "cid")==7 for d in data)
 
 
 if __name__ == "__main__":
