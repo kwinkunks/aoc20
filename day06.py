@@ -4,7 +4,7 @@ Day 6
 """
 
 
-def get_data(fname) -> dict:
+def get_data(fname: str) -> dict:
     """
     Read the data file into dicts.
     """
