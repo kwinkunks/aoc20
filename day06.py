@@ -22,7 +22,7 @@ def part1(fname: str) -> int:
     return sum(len(set(''.join(group))) for group in get_data(fname))
 
 
-def part2(fname: dict):
+def part2(fname: dict) -> int:
     """Part 2.
 
     Tests
