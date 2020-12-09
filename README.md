@@ -11,3 +11,4 @@ Going to start off with Julia, which I haven't used for ages. Predicted stamina:
 - **Day 6** — Relatively easy set theory problem... but I reverted to Python again. Maybe th elease code I've ever needed for an advent of code.
 - **Day 7** — Not only using Python, but NetworkX as well. Thought it would make part 2 easy, but no; my eventual solution is "elegant" like a dancing giraffe.
 - **Day 8** — Here comes the machine code 😬 Not too bad today, but you know where it's going! 
+- **Day 9** — Part 2 reminiscent of Day 1, again wanting recursion. But again brute force is fine.
