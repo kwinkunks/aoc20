@@ -32,7 +32,7 @@ def part1(fname: str) -> int:
     return accumulator
 
 
-def part2(fname: dict):
+def part2(fname: str):
     """Part 2.
 
     Just check what happens if flip every location.

@@ -49,7 +49,7 @@ def part1(fname: str) -> int:
     return len(nx.algorithms.ancestors(G, 'shiny gold'))
 
 
-def part2(fname: dict) -> int:
+def part2(fname: str) -> int:
     """Part 2.
 
     Mutate the iterable during iteration, LOLZ.

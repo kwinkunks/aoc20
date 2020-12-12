@@ -5,7 +5,7 @@ Day 11
 import copy
 
 
-def get_data(fname: str):
+def get_data(fname: str) -> list:
     """
     Read the data file into dicts.
     """
@@ -14,7 +14,7 @@ def get_data(fname: str):
     return [list(line) for line in text.split('\n')]
 
 
-def get_neighbours(world, loc, max_steps):
+def get_neighbours(world: list, loc: tuple, max_steps: int) -> int:
     """
     Adapted from AoC 2018, Day 18.
     """
@@ -30,7 +30,7 @@ def get_neighbours(world, loc, max_steps):
     return ns
 
 
-def play(world, max_rounds=500, empties=4, max_steps=1):
+def play(world: list, max_rounds: int=500, empties: int=4, max_steps: int=1) -> int:
     """
     Also adapted from AoC 2018, Day 18.
     """
@@ -60,7 +60,7 @@ def part1(fname: str):
     return sum(row.count('#') for row in stable)
 
 
-def part2(fname: dict):
+def part2(fname: str):
     """Part 2.
 
     Tests

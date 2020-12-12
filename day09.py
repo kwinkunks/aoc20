@@ -29,7 +29,7 @@ def part1(fname: str, n: int) -> int:
             return x
 
 
-def part2(fname: dict, n: int, target: int) -> int:
+def part2(fname: str, n: int, target: int) -> int:
     """Part 2.
 
     Again this wants recursion, but again I'm resorting

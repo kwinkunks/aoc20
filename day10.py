@@ -30,7 +30,7 @@ def part1(fname: str) -> int:
     return count[1] * count[3]
 
 
-def part2(fname: dict) -> int:
+def part2(fname: str) -> int:
     """Part 2.
 
     Tests
