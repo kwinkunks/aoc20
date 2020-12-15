@@ -16,4 +16,6 @@ Going to start off with Julia, which I haven't used for ages. Predicted stamina:
 - **Day 11** — Very similar to 2018, Day 18, so I cheated a bit and used my functions from that day. Almost thought we had to do the polar coordinate checking again too (2019, Day 10), but thank goodness no.
 - **Day 12** — Fun vector math problem for a Saturday, my favourite of the easier ones so far.
 - **Day 13** — Very satisfying number theory problem about simultaneous linear congruences; solved with the Chinese remainder theorem. More thinking than coding (mostly trying to reinvent the CRT without knowing what it was called... [Google eventually led me there](https://github.com/TheAlgorithms/Python/blob/master/blockchain/chinese_remainder_theorem.py)). Fun problem. Learned about `pow()` with modulus, and `divmod()`.
-- **Day 14** — Binary number shuffling, not my favourite. Learned about `str.zfill()`.
+- **Day 14** — Binary number shuffling, not my favourite. Learned about `str.zfill()`. Tempting to make the entire memory bank, but a `dict` suffices.
+- **Day 15** — One of those fiddly loops where you need info from the previous
+  iteration. Main insight: storing only 'last time seen' in a `dict`.
