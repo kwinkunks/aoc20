@@ -19,3 +19,7 @@ Going to start off with Julia, which I haven't used for ages. Predicted stamina:
 - **Day 14** — Binary number shuffling, not my favourite. Learned about `str.zfill()`. Tempting to make the entire memory bank, but a `dict` suffices.
 - **Day 15** — One of those fiddly loops where you need info from the previous
   iteration. Main insight: storing only 'last time seen' in a `dict`.
+- **Day 16** — My least favourite kind of puzzle: convoluted instructions, but
+  ultimately fairly clear what to do, then not much elegance to be had, just
+a lot of loops and fiddly data management.
+
