@@ -6,7 +6,7 @@ from typing import List, Tuple, Set
 
 def get_data(fname: str, dims: int) -> set:
     """
-    Read the data file into dicts.
+    Read the data file into a set.
     """
     with open(fname) as f:
         coords = set()
@@ -62,7 +62,6 @@ def cycling(active: Set[tuple], offsets: List[tuple]) -> Set[tuple]:
     sparse matrix.
     """
     for cycle in range(6):
-
         # Figure out what to activate.
         activate, superset = set(), set()
         for p in active:

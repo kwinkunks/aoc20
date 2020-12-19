@@ -6,7 +6,7 @@ Day 16
 
 def get_data(fname: str) -> tuple:
     """
-    Read the data file into dicts.
+    Read the data file.
     """
     with open(fname) as f:
         texts = f.read().split('\n\n')

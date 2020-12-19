@@ -5,9 +5,9 @@ Day 12
 import math
 
 
-def get_data(fname: str):
+def get_data(fname: str) -> list:
     """
-    Read the data file into dicts.
+    Read the data file into a list.
     """
     with open(fname) as f:
         return [(line[0], int(line[1:])) for line in f]

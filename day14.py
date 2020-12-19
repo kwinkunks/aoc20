@@ -6,7 +6,7 @@ Day 14
 
 def get_data(fname: str):
     """
-    Read the data file into dicts.
+    Read the data file into a list.
     """
     with open(fname) as f:
         data = []
