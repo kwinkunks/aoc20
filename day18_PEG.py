@@ -21,6 +21,9 @@ def get_data(fname: str) -> list:
 
 def part1(fname: str) -> int:
     """Part 1.
+
+    BAsically we'll just treat + and * the same. It will evaluate left-to-right.
+
     >>> part1("./data/day18_test.txt")
     585
     """
@@ -38,6 +41,9 @@ def part1(fname: str) -> int:
 
 def part2(fname: str) -> int:
     """Part 2.
+
+    Reverse the usual precedence by saying that + operates on the 'inner' terms.
+
     >>> part2("./data/day18_test.txt")
     1773
     """
