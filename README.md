@@ -21,4 +21,5 @@ Going to start off with Julia, which I haven't used for ages. Predicted stamina:
   iteration. Main insight: storing only 'last time seen' in a `dict`.
 - **Day 16** — My least favourite kind of puzzle: convoluted instructions, but ultimately fairly clear what to do, then not much elegance to be had, just a lot of loops and fiddly data management.
 - **Day 17** — Another 'count things in a kernel' but thuis time 3 and 4 dimensions. In hindsight should perhaps have tried n-d convolution but it didn't seem too bad to do it with tuples for Part 1... My solution is suuuuper slow, even after trying to use set operations to speed it up.
-- **Day 18** — Hm, yes, well... not very elegant at all. House of cards in fact. Thought briefly about using 
+- **Day 18** — Hm, yes, well... not very elegant at all. House of cards in fact. Though briefly about using Guido van Rossum's new PEG parser... and then went and did it. Pretty pleased with it. Took me a while to realize it wasn't enough to define the grammar, you also need to have actions. But I kind of love the result.
+
